@@ -27,5 +27,5 @@ git update-index -z --add --remove --stdin &&
 git write-tree --prefix="$src"
 ) ) || die "Failed to generate temporary tree"
 
-commit=$(echo "Automatically generated with commit-tree-to" | git commit-tree $tree)
+commit=$(echo "Automatically generated with commit-tree-to - https://github.com/schu/commit-tree-to" | git commit-tree $tree)
 git update-ref "refs/heads/$dst" $commit
