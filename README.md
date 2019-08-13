@@ -16,4 +16,4 @@ git push --force-with-lease github gh-pages # publish new page
 Note: `commit-tree-to` currently creates a new root commit on each invocation
 and does not reference previous commits. You can use git's
 [`reflog`](https://git-scm.com/docs/git-reflog) to restore a previous version,
-if necessary.
+if necessary. Or adapt the script to your liking :)
